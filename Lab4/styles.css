@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: lightgray;
+}
+
+h1 {
+    color: darkblue;
+}
+
+h2 {
+    color: blue;
+}
+
+p {
+    font-size: 16px;
+    color: grey
+}
+
+.subtitulo {
+    font-family: 'Courier New';
+    color:  green;
+}
+
+#intro {
+    background-color: yellow;
+    padding: 15px;
+}
+
+.tarjeta {
+    border: 2px solid;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
