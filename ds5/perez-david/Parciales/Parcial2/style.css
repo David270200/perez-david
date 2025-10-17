@@ -1,0 +1,287 @@
+h1 {
+    color: black;
+    text-align: center; 
+    font-family: montserrat;
+}
+
+h2 {
+    color: black;
+    text-align: center; 
+    font-family: montserrat;
+}
+
+table {
+    margin: auto;
+    width: 70%;
+    font-family: montserrat ;
+}
+.Panama {
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.cuadroAzul {
+    background-color: blue;
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+}   
+
+.cuadroRojo {
+    background-color: red;
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+}
+
+.CuadroBlanco1 {
+    background-color: white;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+ .estrellaAzul {
+    background-color: blue;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    place-self: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.CuadroBlanco2 {
+    background-color: white;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+
+.estrellaRoja {
+    background-color: red;
+    border-radius: 50%; 
+    width: 60px;
+    height: 60px;
+    place-self: center;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+
+.Uruguay {
+    width: 300px;
+    height: 150px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+ }
+
+.parteSuperior {
+    flex: 1;
+    display: flex;
+ }
+.cuadroBlanco {
+    background-color: white;
+    width: 85px;
+    height: 85px;
+    position: relative;
+ }
+
+.sol {
+    background-color: yellow;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.franjasArriba {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}   
+
+.franjaCeleste, .franjaBlanca {
+    flex: 1;
+}
+
+.franjaCeleste {
+    background-color: blue;
+}
+.franjaBlanca {
+    background-color: white;
+}
+.franjasAbajo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.EstadosUnidos  {
+    width: 300px;
+    height: 150px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+ }
+
+.parteSuperior1 {
+    flex: 1;
+    display: flex;
+ }
+
+ .cuadroAzul1 {
+    background-color: blue;
+    width: 105px;
+    height: 75px;
+    position: absolute;
+ }
+
+.estrella1 {
+    background-color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.estrella2 {
+    background-color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+
+.estrella3 {
+    background-color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 10px;
+    left: 70px;
+}
+.estrella4 {
+    background-color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+.estrella5 {
+    background-color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+.estrella6 {
+    background-color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 30px;
+    left: 70px;
+}
+
+.estrella7 {
+    background-color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+}
+
+.estrella8 {
+    background-color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+
+.estrella9 {
+    background-color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 50px;
+    left: 70px;
+}
+
+.franjasArriba2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}   
+
+.franjaRoja, .franjaBlanco {
+    flex: 1;
+}
+
+.franjaRoja {
+    background-color: red;
+}
+
+.franjaBlanco {
+    background-color: white;
+}
+.franjasAbajo2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.canada {
+    width: 300px;
+    height: 150px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: auto;
+ }
+
+.ColumnaRoja, .ColumnaBlanca {
+    flex: 1;
+}
+
+.ColumnaRoja {
+    background-color: red;
+}
+.ColumnaBlanca {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hoja {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+}   
