@@ -1,0 +1,181 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Aqui pensare-->
+    <meta name="description" content="Portal oficial de eventos UTP - Universidad Tecnológica de Panamá">
+    <meta name="keywords" content="UTP, eventos, universidad, Panamá, estudiantes">
+    <meta name="author" content="[David Pérez]">
+
+    <meta property="og:title" content="Eventos UTP">
+    <meta property="og:description" content="Descubre los próximos eventos en la UTP">
+    <meta property="og:image" content="logo-utp.png">
+
+    <title>Portal de eventos de la UTP</title>
+    <link rel="shortcut icon" type="image/png" href="IconUtp.png">
+</head>
+<body bgcolor="#B9BCC7">
+    <header>
+    <div style="display:flex; align-items:center; gap:10px;">
+        <img src="IconUtp.png" alt="Logo UTP" width="80">
+        <h1>Portal de Eventos UTP</h1>
+    </div>
+    <nav>
+        <a href="#eventos">Eventos</a> |
+        <a href="#multimedia">Multimedia</a> |
+        <a href="#registro">Registro</a> |
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <hr>
+</header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- Sección de eventos -->
+        <section id="eventos">
+            <h2>Eventos Destacados</h2>
+
+            <article>
+                <h3>Evento Gaming UTP</h3>
+                <p>Fecha:09/21/2025 </p>
+                <p>Lugar: Ricardo J. Alfaro, Campus Central, Edificio 3</p>
+                <p>Descripción: Únete al evento gaming de la Universidad Tecnológica de Panamá y demuestra tus habilidades en League of Legends. Participa en torneos, conoce a otros jugadores y disfruta de competencias llenas de emoción, estrategia y diversión. ¡No importa si eres novato o veterano, hay espacio para todos los invocadores!</p>
+            </article>
+
+            <article>
+                <h3>Feria de empleo UTP</h3>
+                <p>Fecha:08/12/2025 </p>
+                <p>Lugar: Ricardo J. Alfaro, Campus Central, Edificio 3</p>
+                <p>Descripción: La Universidad Tecnológica de Panamá te invita a su Feria de Empleo 2025, un espacio donde podrás conectar con empresas líderes, descubrir oportunidades laborales y prácticas profesionales, y fortalecer tu red de contactos. ¡Prepárate para presentar tu talento y abrir puertas a tu carrera profesional!</p>
+            </article>
+        </section>
+
+        <!-- Sección Multimedia (video, audio, mapa) -->
+        <section id="multimedia">
+            <h2>Multimedia</h2>
+            <!-- Video -->
+            <div>
+                <p>Video promocional:</p>
+                <video width="700" controls>
+                    <source src="assets/EventoLeagueOfLegends.mp4" type="video/mp4">
+                </video>
+            </div>
+            <br><br>
+            <!-- Video 2 -->
+            <div>
+                <p>Video promocional:</p>
+                <video width="700" controls>
+                    <source src="assets/Feria de empleo en la Universidad Tecnológica de Panamá.mp4" type="video/webm">
+                </video>
+            </div>
+
+            <!-- Audio -->
+            <div>
+                <p>Canción de la patria:</p>
+                <audio controls>
+                    <source src="assets/Ruben Blades - Patria - Panama.mp3" type="audio/mpeg">
+                    <source src="assets/Ruben Blades - Patria - Panama [TubeRipper.cc].ogg" type="audio/ogg">
+                </audio>
+            </div>
+
+            <!-- Mapa -->
+            <div>
+                <p>Ubicación del campus:</p>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.783203307753!2d-79.56201878468345!3d8.983217194096176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa47e993a2eabf7%3A0x60665f6f93f28a2e!2sUniversidad%20Tecnol%C3%B3gica%20de%20Panam%C3%A1!5e0!3m2!1ses!2spa!4v1695372854321!5m2!1ses!2spa" 
+                    width="400" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    title="Mapa del campus UTP">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Formulario de Registro -->
+        <section id="registro">
+            <h2>Registro a Evento</h2>
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Información Personal</legend>
+
+                    <label for="cedula">Cédula (00-0000-0000) *</label>
+                    <input type="text" id="cedula" name="cedula" required pattern="^\d{2}-\d{3,4}-\d{4}$" placeholder="12-3456-7890">
+
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo institucional *</label>
+                    <input type="email" id="email" name="email" required placeholder="usuario@utp.ac.pa">
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="+50761234567">
+
+                    <label for="nacimiento">Fecha de nacimiento *</label>
+                    <input type="date" id="nacimiento" name="nacimiento" required min="1900-01-01" max="2025-12-31">
+
+                    <label for="hora_pref">Hora preferida</label>
+                    <input type="time" id="hora_pref" name="hora_pref">
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Selección de Evento</legend>
+
+                    <label for="facultad">Facultad</label>
+                    <input list="facultades" id="facultad" name="facultad">
+                    <datalist id="facultades">
+                        <option value="Ingeniería de Sistemas">
+                        <option value="Ingeniería Civil">
+                        <option value="Ingeniería Industrial">
+                    </datalist>
+
+                    <label for="evento">Evento *</label>
+                    <select id="evento" name="evento" required>
+                        <option value="">-- Selecciona --</option>
+                        <option value="feria">Feria Tecnológica</option>
+                        <option value="jornada">Jornada de Investigación</option>
+                        <option value="campeonato">Campeonato Interfacultades</option>
+                    </select>
+
+                    <label for="acomp">Cantidad de acompañantes</label>
+                    <input type="number" id="acomp" name="acomp" min="0" max="10">
+
+                    <label for="interes">Nivel de interés</label>
+                    <input type="range" id="interes" name="interes" min="1" max="10" value="5">
+
+                    <label for="color">Color favorito</label>
+                    <input type="color" id="color" name="color" value="#002d72">
+
+                </fieldset>
+
+                <button type="submit">Enviar registro</button>
+                <button type="reset">Limpiar</button>
+
+            </form>
+
+            <!-- FAQ interactivo -->
+            <details style="margin-top:1rem;">
+                <summary>¿Cómo me registro para un evento?</summary>
+                <p>Completa el formulario y presiona "Enviar registro". Si todo está correcto, recibirás un correo de confirmación.</p>
+            </details>
+
+            <!-- Ejemplo de barra de cupos y popularidad -->
+            <p>Cupos ocupados:</p>
+            <progress value="75" max="100">75%</progress>
+
+            <p>Popularidad del evento:</p>
+            <meter value="8.5" min="0" max="10">8.5/10</meter>
+
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contacto">
+        <p>Universidad Tecnológica de Panamá</p>
+        <p>Correo: <a href="mailto:eventos@utp.ac.pa">eventos@utp.ac.pa</a></p>
+    </footer>
+</body>  
+</html>

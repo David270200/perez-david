@@ -17,7 +17,6 @@ table {
 .Panama {
     width: 600px;
     height: 300px;
-    border: 2px solid black;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -28,12 +27,14 @@ table {
     background-color: blue;
     grid-column: 1 / 2;
     grid-row: 2 / 2;
+    border-end-start-radius: 5px;
 }   
 
 .cuadroRojo {
     background-color: red;
     grid-column: 2 / 2;
     grid-row: 1 / 2;
+    border-start-end-radius: 5px;
 }
 
 .CuadroBlanco1 {
