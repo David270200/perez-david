@@ -147,7 +147,8 @@ header {
 
 .contenedor-borrar {
     display: flex;
-    margin-top: 20px;
+    margin: 20px 40px;
+    justify-content: flex-start;
 }
 
 #btnBorrarTodo {
@@ -235,4 +236,4 @@ header {
 #tablaEstudiantes td button.eliminar:hover {
     background-color: #1f1f3d;
     box-shadow: 0 0 12px rgba(0, 255, 136, 0.6);
-}
+} 
