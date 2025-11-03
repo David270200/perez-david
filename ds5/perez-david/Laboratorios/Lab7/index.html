@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Estudiante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+    <h1>
+        <img src="img/cuadernoiphone.png" id="cuadernoiphone">
+        Registro de Estudiantes
+    </h1>
+    <span id="contador">0 Estudiantes</span>
+</header>
+
+<!--formulario -->
+<div id="formulario">
+    <h2>Nuevo Estudiante</h2>
+    <form id="formEstudiante">
+
+        <!-- fila 1 para  Nombre y Apellido -->
+        <div class="fila">
+            <div class="campo">
+                <h3>Nombre *</h3>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="campo">
+                <h3>Apellido *</h3>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+        </div>
+
+        <!-- fila 2 para que Email a la izquierda, Edad y Carrera que esten a la derecha -->
+        <div class="fila">
+            <div class="campo">
+                <h3>Email *</h3>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="columna-derecha">
+                <div class="campo-inline">
+                    <h3>Edad *</h3>
+                    <input type="number" id="edad" name="edad" required>
+                </div>
+                <div class="campo-inline">
+                    <h3>Carrera *</h3>
+                    <select id="carrera" name="carrera" required>
+                        <option value="">--Selecciona--</option>
+                        <option value="sistemas">Licenciatura en Ingeniería de Sistemas y Computación</option>
+                        <option value="software">Licenciatura en Desarrollo de Software</option>
+                        <option value="tecnologia">Licenciatura en Tecnología de la Información</option>
+                        <option value="redes">Licenciatura en Redes y Seguridad Informática</option>
+                        <option value="programacion">Técnico en Programación</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+ <!-- botones del formulario -->
+    <div class="botones">
+        <div class="acciones">
+            <button type="submit" id="btnAgregar">Agregar Estudiante</button>
+            <button type="button" id="btnLimpiar">Limpiar</button>
+        </div>
+        <span class="nota">Los campos marcados con * son obligatorios.</span>
+    </div>
+</div> 
+    </form>
+
+   
+
+<!-- boton para borrar-->
+<div class="contenedor-borrar">
+    <button id="btnBorrarTodo">Borrar Todo</button>
+</div>
+<!-- contenedor donde saldran los estudiantes registrados -->
+<div id="listaEstudiantes">
+    <h2>Estudiantes Registrados</h2>
+    <table id="tablaEstudiantes">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Email</th>
+                <th>Edad</th>
+                <th>Carrera</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="sinResultados">
+                <td colspan="7" style="text-align: center; color: rgba(255,255,255,0.6);">
+                    No hay resultados.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="consejo">Consejo: usa el buscador para filtrar rápidamente los registros.</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
