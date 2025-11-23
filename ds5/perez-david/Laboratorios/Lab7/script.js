@@ -97,4 +97,4 @@ btnBorrarTodo.addEventListener("click", () => {
 });
 
 renderizarTabla();
-actualizarContador();
+actualizarContador();05
